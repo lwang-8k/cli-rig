@@ -12,6 +12,8 @@ const serve = serveStatic("./");
 console.log("hi", globalThis.module);
 
 
+
+
 createServer((req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     serve(req, res, finalhandler(req, res));
